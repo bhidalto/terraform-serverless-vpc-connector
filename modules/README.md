@@ -1,19 +1,20 @@
-# How to create a Serverless VPC access connector
+# Serverless VPC access connector module
 
-This example demonstrates how to create a [Serverless VPC access connector](https://cloud.google.com/vpc/docs/configure-serverless-vpc-access).
+This module is intended to easily create Serverless VPC access connectors using Terraform.
 
 ## Usage
 
-1. ```
-   terraform init -upgrade
-   ```
-
-2. ```
-   terraform apply
-   ```
-If you want to edit or change the variable's name, such as the Serverless VPC access connector name, just edit the `variables.tf` file and modify the variable's value.
-
-Afterwards, if you have already initialized terraform, just run terraform apply and you will be ready to go!
+```
+module "serverless_vpc_connector" {
+  source = "git::https://github.com/bhidalto/terraform-serverless-vpc-connector/modules/serverless_vpc_connector"
+  name           = my-connector
+  network        = my-network
+  ip_cidr_range  = 10.0.0.0/28
+  region         = europe-west1
+  min_throughput = 200
+  max_throughput = 300
+}
+```
 
 ## Variables
 

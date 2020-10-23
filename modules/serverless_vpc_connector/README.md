@@ -16,7 +16,7 @@ module "serverless_vpc_connector" {
 }
 ```
 
-A detailed example on how to use it can be found [here](../examples/README.md).
+A detailed example on how to use it can be found [here](../examples/).
 
 ## Variables
 

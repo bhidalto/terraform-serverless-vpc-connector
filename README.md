@@ -58,7 +58,7 @@ $ cd terraform-serverless-vpc-connector/modules/examples/
 
 3. Run `terraform init` to download the different modules as well as the Google provider.
 
-4. Modify the `terraform.tfvars` file to modify the values of the variables to be passed to the module. All the info about the module and the accepted variables can be found [here](./modules/serverles_vpc_connector/README.md).
+4. Modify the `terraform.tfvars` file to modify the values of the variables to be passed to the module. All the info about the module and the accepted variables can be found [here](./modules/serverless_vpc_connector/README.md).
 
 5. (Optional) Run `terraform plan` to see the different resources that will be created.
 

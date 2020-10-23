@@ -35,7 +35,7 @@ variable "ip_cidr_range" {
   default     = ""
 
   validation {
-    condition     = length(regexall("[[:digit:]]{1,3}.[[:digit:]]{1,3}.[[:digit:]]{1,3}.[[:digit:]]{1,3}/[2][8]", var.ip_cidr_range)) > 0
+    condition     = length(regexall("^[[:digit:]]{1,3}.[[:digit:]]{1,3}.[[:digit:]]{1,3}.[[:digit:]]{1,3}/[2][8]$", var.ip_cidr_range)) > 0
     error_message = "IP range must be in CIDR notation(RFC 4632) and the CIDR block must be /28."
   }
 }

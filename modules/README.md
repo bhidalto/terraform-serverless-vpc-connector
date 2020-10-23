@@ -16,6 +16,8 @@ module "serverless_vpc_connector" {
 }
 ```
 
+A detailed example on how to use it can be found [here](../examples/README.md).
+
 ## Variables
 
 Below is the list of available variables to be used upon creation of the Serverless VPC access connector.

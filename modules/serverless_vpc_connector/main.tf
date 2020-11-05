@@ -5,5 +5,4 @@ resource "google_vpc_access_connector" "serverless_vpc_connector" {
   network        = var.network
   min_throughput = (var.min_throughput < var.max_throughput) == true ? var.min_throughput : "The min_throughput value should be smaller than min_throughput"
   max_throughput = (var.max_throughput > var.min_throughput) == true ? var.max_throughput : "The max_throughput value should be bigger than max_throughput"
-  project        = var.project
 }

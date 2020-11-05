@@ -67,7 +67,3 @@ variable "max_throughput" {
     error_message = "Max throughput must be within range [300,1000]."
   }
 }
-
-variable "project" {
-
-}
